@@ -1,0 +1,33 @@
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+Connecting to MongoDB: mongodb://localhost:27017/community-bulletin
+✅ MongoDB Connected: localhost
+📊 Database: community-bulletin
+🔌 Ready State: Connected
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🌱 Seeding MongoDB database...
+⏭️  Admin user already exists
+🎉 Database seeding completed successfully!
+🚀 Community Bulletin Board API running on port 5000
+📱 Frontend URL: http://localhost:3001
+🌍 Environment: development
+2026-04-29T05:27:18.621Z - GET /health
+2026-04-29T05:27:23.777Z - GET /health
+2026-04-29T05:27:58.710Z - GET /api/posts
+2026-04-29T05:27:58.871Z - GET /api/posts/categories
+2026-04-29T05:27:58.886Z - GET /api/auth/profile
+2026-04-29T05:27:58.903Z - GET /api/auth/profile
+2026-04-29T05:28:03.309Z - POST /api/auth/login
+2026-04-29T05:28:05.077Z - GET /api/posts
+2026-04-29T05:28:05.087Z - GET /api/posts/categories
+2026-04-29T05:28:05.108Z - GET /api/posts/categories
+2026-04-29T05:28:05.145Z - GET /api/posts
+2026-04-29T05:28:05.351Z - GET /api/likes/check/694e128ddadf5028f9ee795b/post
+2026-04-29T05:28:05.368Z - GET /api/likes/check/694bb197e1ba1b54ed67aead/post
+2026-04-29T05:28:05.378Z - GET /api/likes/check/694ba89ae1ba1b54ed67ac99/post
+2026-04-29T05:28:05.393Z - GET /api/likes/check/6949100b9735f0eb4de849bf/post
+2026-04-29T05:28:05.401Z - GET /api/likes/check/6948f6f293bc084b9fb15a0c/post
+2026-04-29T05:28:05.718Z - GET /api/likes/check/6948f6f293bc084b9fb15a0c/post
+2026-04-29T05:28:05.738Z - GET /api/likes/check/6949100b9735f0eb4de849bf/post
+2026-04-29T05:28:05.781Z - GET /api/likes/check/694bb197e1ba1b54ed67aead/post
+2026-04-29T05:28:05.800Z - GET /api/likes/check/694ba89ae1ba1b54ed67ac99/post
+2026-04-29T05:28:05.806Z - GET /api/likes/check/694e128ddadf5028f9ee795b/post
