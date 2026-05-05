@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: community-bulletin-backend
+    runtime: node
+    plan: free
+    startCommand: npm start
+    buildCommand: npm install
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGODB_HOST
+        fromDatabase:
+          name: mongodb
+          property: host
+      - key: MONGODB_PORT
+        fromDatabase:
+          name: mongodb
+          property: port
+      - key: MONGODB_DATABASE
+        value: community-bulletin
+      - key: MONGODB_USER
+        fromDatabase:
+          name: mongodb
+          property: user
+      - key: MONGODB_PASSWORD
+        fromDatabase:
+          name: mongodb
+          property: password
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: JWT_REFRESH_EXPIRES_IN
+        value: 30d
+      - key: FRONTEND_URL
+        sync: false
+      - key: NODE_ENV
+        value: production
+
+databases:
+  - name: mongodb
+    plan: free
+    version: "6.0"
